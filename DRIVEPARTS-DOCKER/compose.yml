@@ -21,7 +21,7 @@ services:
     image: driveparts
     container_name: driveparts
     restart: always
-    command: "gunicorn -c gunicorn.py driveparts.wsgi"
+    command: "gunicorn -c gunicorn.py candystore.wsgi"
     env_file:
       - .env
     links:
